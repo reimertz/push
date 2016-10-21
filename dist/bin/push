@@ -58,7 +58,6 @@
 	  (0, _pushHelp.help)();
 	} else if (process.argv.length === 3) {
 	  var possibleFileName = process.argv[process.argv.length - 1];
-	  console.log(possibleFileName);
 
 	  (0, _pushDeploy.deploy)(possibleFileName);
 	} else {
@@ -155,7 +154,6 @@
 	              }
 	              return response.json();
 	            }).then(function (json) {
-	              console.log(json);
 	              var htmlFile = json.files['index.html'];
 	              var rawUrl = htmlFile.raw_url;
 
@@ -400,7 +398,7 @@
 	            shortenedUrl = _context3.sent;
 
 
-	            process.stdout.write(_chalk2.default.green('\u27AB       deployed: http://lagom.hook.io/?c=' + shortenedUrl + '\n'));
+	            process.stdout.write(_chalk2.default.green('\u27AB       deployed: http://push.hook.io/?c=' + shortenedUrl + '\n'));
 	            _context3.next = 25;
 	            break;
 

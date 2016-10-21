@@ -192,7 +192,7 @@
 	            shortenedUrl = _context3.sent;
 
 
-	            process.stdout.write(_chalk2.default.green('\u27AB       deployed: http://lagom.hook.io/?c=' + shortenedUrl + '\n'));
+	            process.stdout.write(_chalk2.default.green('\u27AB       deployed: http://push.hook.io/?c=' + shortenedUrl + '\n'));
 	            _context3.next = 25;
 	            break;
 
@@ -296,7 +296,6 @@
 	              }
 	              return response.json();
 	            }).then(function (json) {
-	              console.log(json);
 	              var htmlFile = json.files['index.html'];
 	              var rawUrl = htmlFile.raw_url;
 

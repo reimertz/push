@@ -54,8 +54,6 @@
 
 	var _pushHelp = __webpack_require__(/*! ./push-help */ 8);
 
-	console.log(process.argv);
-
 	if (~process.argv.indexOf('help')) {
 	  (0, _pushHelp.help)();
 	} else if (process.argv.length === 3) {

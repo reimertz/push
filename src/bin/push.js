@@ -1,8 +1,6 @@
 import { deploy } from './push-deploy'
 import { help } from './push-help'
 
-console.log(process.argv)
-
 if (~process.argv.indexOf('help')) {
   help()
 }

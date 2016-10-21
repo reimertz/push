@@ -22,11 +22,11 @@
 
 ---
 
-`lagom index.html` will inline all online dependencies of 'index.html', deploy it anonymously on github and finally generate a short url. pretty neat!
+`lagom index.html` will inline all online dependencies of 'index.html', deploy it anonymously on GitHub and finally generate a short URL. Pretty neat!
 
-## install push
+## Install push
 
-waiting for push package to be released to me, so till that happens, you'll nned to install direclty from git.
+Waiting for push package to be released to me, so until that happens, you'll need to install directly from git:
 
 ```
 yarn global add git://github.com/reimertz/push.git
@@ -34,15 +34,15 @@ yarn global add git://github.com/reimertz/push.git
 npm install git://github.com/reimertz/push.git -g --production
 ```
 
-## usage
+## Usage
 
-### deploy a file
+### Deploy a file
 ```
 push index.html
 > http://push.hook.io?c=<code>
 ```
 
-## todo
+## Todo
 - more functionality
 - tests (!)
 - gh page

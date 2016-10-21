@@ -7,7 +7,7 @@ import Inliner from 'inliner'
 
 
 const printStatus = async (status) => {
-  process.stdout.write(`◴         status: ${status}\n`)
+  process.stdout.write(`➫         status: ${status}\n`)
 }
 
 const getInlinedFile = async (fileName) => {
@@ -31,7 +31,7 @@ const getInlinedFile = async (fileName) => {
 
 export const deploy = async (fileName = 'index.html') => {
   let fileExists, inlinedHTML, rawGistURL, shortenedUrl
-  process.stdout.write(chalk.green(`◴           push: deploy\n`))
+  process.stdout.write(chalk.green(`➫           push: deploy\n`))
 
   try {
     fileExists = await fsp.exists(`./${fileName}`)
@@ -48,10 +48,10 @@ export const deploy = async (fileName = 'index.html') => {
 
     shortenedUrl = await urlShortener(rawGistURL)
 
-    process.stdout.write(chalk.green(`◴       deployed: http://lagom.hook.io/?c=${shortenedUrl}\n`))
+    process.stdout.write(chalk.green(`➫       deployed: http://lagom.hook.io/?c=${shortenedUrl}\n`))
   }
 
   catch(e) {
-    process.stdout.write(chalk.red(`◴         error: ${e.message}\n`))
+    process.stdout.write(chalk.red(`➫          error: ${e.message}\n`))
   }
 }

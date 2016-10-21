@@ -62,8 +62,8 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var help = exports.help = function help() {
-	  process.stdout.write(_chalk2.default.green('◴ push <filename>          deploy <filename>  \n'));
-	  process.stdout.write(_chalk2.default.green('◴ push help                show this help\n'));
+	  process.stdout.write(_chalk2.default.green('push <filename>          inline assets and deploy \n'));
+	  process.stdout.write(_chalk2.default.green('push help                show this help\n'));
 	};
 
 /***/ },

@@ -16,12 +16,15 @@ export async function createGist(indexFile) {
 
   return fetch(GIST_URL, {
     headers: {
-      'User-Agent': 'push'
+      'User-Agent': 'push.js'
     },
     method: 'post',
     body: JSON.stringify(body)
   })
   .then(response => {
+    if (response.status == 403 ) {
+      throw new Error('github api rate limit exceeded. :(')
+    }
     return response.json()
   })
   .then(json => {

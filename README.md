@@ -22,7 +22,7 @@
 
 ---
 
-`push index.html` will inline all online dependencies of 'index.html', deploy it anonymously on GitHub and finally generate a short URL. Pretty neat!
+`push index.html` will inline all assets and online dependencies of 'index.html', deploy it anonymously on GitHub and finally generate a short URL. Pretty neat!
 
 ## Install push
 

@@ -12,10 +12,10 @@ const printStatus = async (status) => {
 
 const getInlinedFile = async (fileName) => {
   const options = {
-    'images': false,
-    'compressJS': false,
+    'images': true,
+    'compressJS': true,
     'collapseWhitespace': false,
-    'compressCSS': false,
+    'compressCSS': true,
     'preserveComments': true,
   }
 

@@ -1,7 +1,7 @@
 {
   "name": "push",
-  "version": "0.0.5",
-  "description": "◴ deploy static content with ease",
+  "version": "0.1.0",
+  "description": "➫ deploy static content with ease",
   "main": "index.js",
   "bin": {
     "push": "./dist/bin/push"

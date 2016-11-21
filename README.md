@@ -47,3 +47,6 @@ push index.html
 - tests (!)
 - gh page
 
+## Credits
+
+Thanks to [Jackson Tian](https://github.com/JacksonTian) for donating the npm package name.

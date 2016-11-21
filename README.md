@@ -26,25 +26,28 @@
 
 ## Install push
 
-Waiting for push package to be released to me, so until that happens, you'll need to install directly from git:
-
+#### yarn
 ```
-yarn global add git://github.com/reimertz/push.git
-# or
-npm install git://github.com/reimertz/push.git -g --production
+yarn global add push
+```
+
+#### npm
+```
+npm install push -g --production
 ```
 
 ## Usage
 
-### Deploy a file
+### Push a file
 ```
 push index.html
 > http://push.hook.io?c=<code>
 ```
 
-## Todo
+## Want to help?
 - more functionality
-- tests (!)
+  - per extension solution
+- tests
 - gh page
 
 ## Credits
